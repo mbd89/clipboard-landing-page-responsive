@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;600;700&family=Barlow+Semi+Condensed:wght@100;500;600&family=League+Spartan:wght@100&family=Open+Sans:wght@300;400;600;700&family=Outfit:wght@200&family=Poppins:wght@100;600;700&family=Public+Sans:ital,wght@0,300;1,400&family=Raleway:ital,wght@1,700&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+ body{
+ font-family: 'Bai Jamjuree';
+ margin: 0;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.first-section1{
+  background-image: url(images/bg-header-desktop.png);
+  height: 200Px;
+}
+.first-section-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first-section-text p:first-child{
+  font-size: 30px;
+  font-weight:  600 ;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
+.first-section-text p:nth-child(2) {
+  color: lightgray;
+  text-align: center;
+  padding-left: 350px;
+  padding-right: 350px;
+  margin-bottom: 30px;
+  margin-top: -20px;
+ }
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+.iosbutton{
+  background: hsl(171, 66%, 44%);
+  border: none;
+ border-radius: 25px;
+ padding: 10px;
+ color: white;
+ font-weight: bold;
+ margin-left: 20px;
+ padding-left: 20px;
+ padding-right: 20px;
+ cursor: pointer;
+ box-shadow: 0px 1px rgb(46, 104, 46); 
+}
+.macbutton{
+ background: hsl(233, 100%, 69%);
+ border: none;
+ border-radius: 25px;
+ padding: 10px;
+ color: white;
+ font-weight: bold;
+ padding-left: 20px;
+ padding-right: 20px;
+ cursor: pointer;
+ box-shadow: 0px 1px rgb(13, 13, 203) ; 
+}
+.second-section{
+  margin-bottom: 100px;
+}
+.second-section-text p:first-child{
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.second-section-text p:nth-of-type(2){
+  color: lightgray;
+  text-align: center;
+  margin-bottom: 80px;
+  padding-left: 300px;
+  padding-right: 300px;
+
+}
+.image-computer1{
+  margin-left: -30px;
+}
+
+.computer-next-to-text{
+  display: flex;
+  gap: 50px;
+}
+
+.features p{
+  color: lightgray;
+  
+}
+.features{
+  margin-top: 50px;
+  margin-left: 20px;
+  padding-right: 100px;
+}
+
+.third-section-text p:first-child{
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+
+
+}
+.third-section-text p:nth-of-type(2){
+  color: lightgray;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+.third-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-devices, .image-computer{
+  width: 100%;
+}
+.blacklist-icon{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.blacklist-icon p:nth-of-type(1){
+margin-bottom: -10px;
+font-weight: bold;
+}
+.blacklist-icon p:nth-of-type(2){
+color: lightgray;
+text-align: center;
+}
+
+.supercharge-worfkflow-text p:nth-of-type(1){
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.supercharge-worfkflow-text p:nth-of-type(2){
+  color: lightgray;
+  text-align: center;
+
+}
+
+.plaintext-icon p:nth-of-type(1){
+  margin-bottom: -10px;
+ font-weight: bold;
+}
+
+.plaintext-icon p:nth-of-type(2){
+  color: lightgray;
+  text-align: center;
+}
+
+.plaintext-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sneakpreview p:nth-of-type(1){
+  margin-bottom: -10px;
+ font-weight: bold;
+}
+
+.sneakpreview p:nth-of-type(2){
+color: lightgray;
+text-align: center;
+}
+
+.sneakpreview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons{
+  display: flex;
+  gap: 50px;
+  padding: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 30Px;
+}
+
+.superchar-workflow-section{
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+
+
+.fancybrands{
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  padding: 50px;
+}
+.fancybrands img{
+  width: 100%;
+}
+
+.last-section-text p:nth-of-type(1){
+  font-size: 25px;
+  margin-bottom: -10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.last-section-text p:nth-of-type(2){
+color: lightgray;
+text-align: center;
+padding-right: 200px;
+padding-left: 200px;
+margin-bottom: 20px;
+}
+
+.last-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+footer{
+  background-color: rgb(221, 221, 221);
+  margin-bottom: -50px;
+}
+
+.faqs, .privacy-policy{
+display: flex;
+flex-direction: column;
+}
+
+.socials{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-socials{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  color: gray;
+  cursor: pointer;
+}
+
+.social-media{
+  display: flex;
+  gap: 10px;
+  align-self: center;
+  justify-content: center;
+  padding-right: 100px;
+}
+.logo2 img{
+  height: auto;
+  padding-top: 20px;
+  padding-left: 100px;
+  width: 30%;
+}
+.installguide{
+  align-self: flex-start;
+ 
+}
+
+@media  screen and (max-width:1080px){
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-section-text p:nth-child(2) {
+ 
+  padding-left: 50px;
+  padding-right: 50px;
+
+ }
+ .second-section-text p:nth-of-type(2){
+ 
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.second-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.computer-next-to-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.features{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: 10px;       
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.features p {
+  text-align: center;
+}
+.image-computer{
+  width: 100%;
+ 
+}
+.image-computer1{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.first-section-text p:nth-of-type(1){
+  text-align: center;
+}
+
+.third-section-text p:nth-of-type(2){
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fancybrands{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fancybrands img{
+  width: 100%;
+}
+.last-section-text p:nth-of-type(2){
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+ gap: 10Px;
+
+}
+
+.installguide{
+  text-align: center;
+ align-self: center;
+ margin-bottom: 20px;
+ 
+}
+.footer-socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo2 img{
+   padding-left: 0px;
+  height: auto;
+  width: 50%;
+}
+.social-media{
+ display: flex;
+ gap: 20px;
+  padding-right: 0px;
+}
+
+}
+
+@media screen and (max-width:500px){
+.buttons{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+.iosbutton, .macbutton{
+ 
+  
+ margin-left: 30px;
+ margin-right: 30px;
+
+}
+.iosbutton{
+  margin-left: 30px;
+}
+.image-devices{
+  width: 100%;
+
+}
+.features, .icons{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.supercharge-worfkflow-text{
+  padding: 30px;
+  margin-bottom: -10px;
+}
+.image-computer1{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<main class="container">
+
+<div class="first-section1">
+  <div class="logo">
+    <img class="logo-svg" src="images/logo.svg" alt="logo">
+  </div>
+</div>
+  <div class="first-section-text"> 
+   <p>A history of everything you copy</p>
+
+   <p>Clipboard allows you to track and organize everything you 
+    copy. Instantly access your clipboard on all your devices.</p>
+    
+  <div class="buttons"> 
+  <button class="iosbutton">Download for iOS</button>  
+  <button class="macbutton">Download for Mac</button>  
+</div>
+  </div>
+
+
+  <div class="second-section">
+    <div class="second-section-text"> 
+   <p>Keep track of your snippets</p>
+
+   <p>Clipboard instantly stores any item you copy in the cloud, 
+    meaning you can access your snippets immediately on all your 
+    devices. Our Mac and iOS apps will help you organize everything.</p>
+  </div>
+  <div class="computer-next-to-text">
+    <div class="image-computer1">
+      <img class="image-computer" src="images/image-computer.png" alt="computer">
+    </div>  
+  <div class="features"> 
+   <h4>Quick Search</h4>
+   <p>Easily search your snippets by content, category, web address, application, and more.</p>
+   <h4>iCloud Sync</h4>
+   <p>Instantly saves and syncs snippets across all your devices.</p>
+   <h4>Complete History</h4>
+   <p>Retrieve any snippets from the first moment you started using the app. </p>
+  
+  </div>
+
+  </div>
+</div>
+
+<div class="third-section">
+<div class="third-section-text"> 
+<p>Access Clipboard anywhere</p> 
+<p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
+  snippets in a few simple clicks.</p>
+</div>
+<div class="third-section-image">
+  <img class="image-devices" src="images/image-devices.png" alt="image-devices">
+</div>
+
+</div>
+
+<div class="superchar-workflow-section">
+   
+  <div class="supercharge-worfkflow-text"> 
+  <p>Supercharge your workflow</p>
+  <p>We’ve got the tools to boost your productivity.</p>
+</div>
+
+<div class="icons"> 
+<div class="blacklist-icon" >
+  <div class="blacklist-image">
+    <img src="images/icon-blacklist.svg" alt="">
+  </div>
+  <p>Create blacklists</p>
+  <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+</div>
+
+
+<div class="plaintext-icon">
+<div class="plaintext-image">
+  <img src="images/icon-text.svg" alt="text-icon">
+</div>
+<p>Plain text snippets</p>
+<p>Remove unwanted formatting from copied text for a consistent look.</p>
+</div>
+
+
+<div class="sneakpreview">
+<div class="sneakpreview-image">
+  <img src="images/icon-preview.svg" alt="sneak-preview">
+</div>
+<p>Sneak preview</p>
+<p>Quick preview of all snippets on your Clipboard for easy access.</p>
+</div>
+
+
+</div>
+
+<div class="fancybrands">
+<div class="goole-icon">
+  <img src="images/logo-google.png" alt="goole-icon">
+</div>
+<div class="ibm-icon">
+  <img src="images/logo-ibm.png" alt="ibm-icon">
+</div>
+<div class="microsoft-icon">
+  <img src="images/logo-microsoft.png" alt="microsoft-icon">
+</div>
+<div class="hp-icon">
+  <img src="images/logo-hp.png" alt="hp-icon">
+</div>
+<div class="vectorgraphics-icon">
+  <img src="images/logo-vector-graphics.png" alt="vectorgraphics-icon">
+</div>
+
+</div>
+
+</div>
+
+<div class="last-section">
+
+  <div class="last-section-text"> 
+  <p>Clipboard for iOS and Mac OS</p>
+  <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+    and you’re ready to start adding to your clipboard.</p>
+</div>
+
+  <div class="buttons">
+    <button class="iosbutton">Download for iOS</button>  
+    <button class="macbutton">Download for Mac</button> 
+  </div>
+</div>
+
+
+
+
+
+<footer>
+  <div class="footer-socials"> 
+  <div class="socials"> 
+  <div class="logo2">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+  
+    <div class="faqs">
+  <p>FAQs</p>
+  <p>Contact Us</p>
+    </div>
+  
+    <div class="privacy-policy">
+  <p>Privacy Policy</p>
+  <p>Press Kit</p>
+    </div>
+  
+    <div class="installguide">
+  <p>Install Guide</p>
+    </div>
+  
+  </div>
+  
+  <div class="social-media">
+  
+    <div class="facebook">
+      <img src="images/icon-facebook.svg" alt="facebook-icon">
+    </div>
+    <div class="twitter">
+      <img src="images/icon-twitter.svg" alt="twitter-icon">
+    </div>
+    <div class="instagram">
+      <img src="images/icon-instagram.svg" alt="isntagram-icon">
+    </div>
+  </div>
+</div>
+  
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Makha Diagne</a>.
+      </p>
+    </footer>
+
+
+
+
+</main>
+
+
+
+
+
+  
+
+
+
+</body>
+</html>
